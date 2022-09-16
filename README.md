@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-[Solution](https://phoenixMputu.github.io/order-summary-component/)
+[Solution](https://phoenixmputu.github.io/huddle-landing-page-with-single-introductory-section-master/)
 
 ## My process
 
