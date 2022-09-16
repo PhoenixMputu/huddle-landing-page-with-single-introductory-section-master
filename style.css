@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(257, 40%, 49%);
+  background-image: url("./images/bg-desktop.svg");
+  overflow: hidden;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  margin-bottom: 3%;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+main {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.section-image, .section-text {
+  width: 45%;
+}
+
+.section-image img {
+  height: 350px;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  margin-top: 1.5rem;
+  margin-right: 4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.section-text p {
+  margin-bottom: 2rem !important;
+  font-weight: 400;
+}
+
+.section-text .btn {
+  background-color: #fff;
+  padding: 7px 30px;
+  border-radius: 90px;
+  box-shadow: 10px 5px 5px hsl(257, 40%, 49%);
+}
+
+.btn:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: #fff;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.attribution {
+  width: 50%;
+}
+
+.attribution a:hover {
+  color: hsl(300, 69%, 71%);
+}
+
+.icons {
+  width: 20%;
+}
+
+.icons a {
+  padding: 5px;
+  border-radius: 100%;
+  border-style: solid;
+  border-width: 2px;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-color: #fff;
+}
+
+.icons a:hover {
+  border-color: hsl(300, 69%, 71%);
+}
+
+.icons a i {
+  height: 1px;
+  width: 15px;
+  color: #fff;
+}
+
+.icons a:hover i {
+  color: hsl(300, 69%, 71%);
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    width: 100%;
+    background-image: url('./images/bg-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0;
+    padding: 2rem;
+    padding-top: 0;
+    overflow: scroll;
+  }
+  header {
+    margin-bottom: 3rem;
+  }
+  header img {
+    height: 40px;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .section-image, .section-text {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .section-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    margin: 0;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 26px;
+  }
+
+  .section-text p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  footer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 3rem !important;
+    position: relative;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+
+  .section-text .btn {
+    padding: 10px 70px;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 2rem  !important;
+  }
+
+  .attribution, .icons {
+    width: 100%;
+    text-align: center;
+  }
+  .attribution p {
+    text-align: center;
+  }
+
+  .icons {
+    margin-bottom: 2rem;
+  }
+}
